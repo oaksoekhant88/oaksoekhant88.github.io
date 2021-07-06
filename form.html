@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    
+    <h1>Login Form</h1>
+    <a href="index.html">Outsider Main Index</a> <br> <br>
+    <form action="check.php" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <input type="text" name="user_name" placeholder="Full Name" minlength="6" maxlength="10"> <br>
+            <input type="email" name="user_email" placeholder="User Email"> <br>
+            <input type="password" name="user_password" placeholder="Enter Password" minlength="6" maxlength="10"> <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Registration</h2>
+    <form action="register.php" method="get">
+        <input type="hidden" name="user_id" value="45">
+        <textarea name="user_address" placeholder="Enter Address" cols="30" rows="10"></textarea> <br>
+        <input type="radio" name="gender" value="male" id="male" checked="checked"> <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label> <br>
+        Interest: <br>
+        <input type="checkbox" name="php" id="php"  value="php" checked="checked"> <label for="php">PHP</label>
+        <input type="checkbox" name="js" id="js"  value="js"> <label for="js">JS</label>
+        <input type="checkbox" name="phy" id="phy"  value="phy"> <label for="phy">Phython</label> <br>
+
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
