@@ -17,9 +17,10 @@
     </form>
 
     <h2>Registration</h2>
-    <form action="register.php" method="get">
+    <form action="register.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="user_id" value="45">
-        <textarea name="user_address" placeholder="Enter Address" cols="30" rows="10"></textarea> <br>
+        <input type="disable" name="user_name" value="Mr.Yan" readonly="readonly"> <br><br>
+        <textarea name="user_address" placeholder="Enter Address" cols="30" rows="10" required="required"></textarea> <br>
         <input type="radio" name="gender" value="male" id="male" checked="checked"> <label for="male">Male</label>
         <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label> <br>
         Interest: <br>
@@ -27,9 +28,28 @@
         <input type="checkbox" name="js" id="js"  value="js"> <label for="js">JS</label>
         <input type="checkbox" name="phy" id="phy"  value="phy"> <label for="phy">Phython</label> <br>
 
+        Education <br>
+        <select name="education" id="" multiple="multiple">
+            <option value="1">Diploma</option>
+            <option value="2">BA</option>
+            <option value="3" selected="selected">Master</option>
+        </select> <br> <br>
 
+        <input type="date" name="dob"> <br><br>
+
+        <input type="file" name="photo"> <br><br>
+
+        <input type="number" name="age" placeholder="Your age" min="18" max="60"> <br><br>
+
+        <input type="number" name="height" placeholder="Your height in inches" step="0.01" min="4.5" max="6"> <br><br>
+
+        <button>Click Me</button>
+        <input type="button" value="Click Me">
         <input type="submit" value="Register">
+        <input type="reset" value="Clear">
     </form>
 
+    <iframe width="360" height="315" src="https://www.youtube.com/embed/f8Kw7YkLuZw" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
