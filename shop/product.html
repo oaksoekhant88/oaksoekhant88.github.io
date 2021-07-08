@@ -3,6 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>Product Page</title>
+
+    <style>
+        .styletb{
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0 0 20px rgb(0, 0, 0.15);
+        }
+        .styletb thead tr{
+            background-color: #3d6991;
+            color: #ffffff;
+        }
+        .styletb th, td{
+            padding: 10px 9px;
+        }
+        /* .styletb tbody tr{
+            border-bottom: 2px solid #3d6991;
+        } */
+        .styletb tbody tr td:hover{
+            background-color: #b7c1c7;
+        }
+        .styled-table tbody tr:last-of-type{
+			border-bottom: 2px solid #3d6991;
+		}
+    </style>
 </head>
 <body>
     <a href="index.html">Home</a> |
@@ -10,16 +36,32 @@
     <a href="product.html">Product</a> |
     <a href="contact.html">Contact</a> |
     <a href="../index.html">Outsider Main Index</a>
-
-    <h1>Our Product Menus</h1>
     
-    <img src="images/p1.jpg" alt="" width="300px" height="400px">
-    <img src="images/p2.jpg" alt="" width="300px" height="400px">
-    <img src="images/p3.jpg" alt="" width="300px" height="400px">
-    <img src="images/p4.jpg" alt="" width="300px" height="400px">
-    <img src="images/p5.jpg" alt="" width="300px" height="400px">
-    <img src="images/p6.jpg" alt="" width="300px" height="400px">
-    <img src="images/p7.jpg" alt="" width="300px" height="400px">
-    <img src="images/p8.jpg" alt="" width="300px" height="400px">
+    <center>
+        <h1>Our Product Menus</h1>
+    
+        <table class="styletb">
+            <thead>
+                <tr>
+                    <th colspan="4"><h3>This is Our Main Menu</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/p1.jpg" alt="" width="225px" height="300px"> <br> HAMBONBON SET <br> 3000 Kyats</td>
+                    <td><img src="images/p2.jpg" alt="" width="225px" height="300px"> <br> CARBON HAMBONBON <br> 1500 Kyats </td>
+                    <td><img src="images/p3.jpg" alt="" width="225px" height="300px"> <br> BLACK DUMPLINGS <br> 2000 Kyats </td>
+                    <td><img src="images/p4.jpg" alt="" width="225px" height="300px"> <br> BIG BLACK DUMPLINGS  <br> 4000 Kyats </td>
+                </tr>
+                <tr>
+                    <td><img src="images/p5.jpg" alt="" width="225px" height="300px"> <br> CHICKEN WINGS <br> <del>5000 Kyats</del> 2500 Kyats </td>
+                    <td><img src="images/p6.jpg" alt="" width="225px" height="300px"> <br> POTATO STICKS <br> <del>3600 Kyats</del> 1800 Kyats</td>
+                    <td><img src="images/p7.jpg" alt="" width="225px" height="300px"> <br> MATCHA GREEN TEA <br> 2500 Kyats </td>
+                    <td><img src="images/p8.jpg" alt="" width="225px" height="300px"> <br> DESSERTS <br> 3800 Kyats </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+        
 </body>
 </html>

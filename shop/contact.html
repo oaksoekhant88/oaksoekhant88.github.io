@@ -3,6 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Contact Page</title>
+    <style>
+        .stylediv{
+            margin: 0 100px 0 80px;
+        }
+        .div1{
+            display: block;
+            float: left;
+        }
+        .div2{
+            display: block;
+            float: right;
+        }
+    </style>
 </head>
 <body>
     <a href="index.html">Home</a> |
@@ -11,11 +24,41 @@
     <a href="contact.html">Contact</a> |
     <a href="../index.html">Outsider Main Index</a>
 
-    <h1>Contact Us</h1>
+    <div class="stylediv">
+        <h1>Contact Us</h1>
+        <form action="contact.php" method="POST" enctype="multipart/form-data" class="div1">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" size="50" maxlength="40" placeholder="Enter Full Name Please"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" size="50" maxlength="40" placeholder="Enter Your Email address"></td>
+                </tr>
+                <tr>
+                    <td>Your Problems:</td>
+                    <td><textarea name="" id="" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Image:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+             
+        </form>
+        <form class="div2">
+            Contact Us <br>
+            Phone : 09-48/45568455 <br>
+            Address : Pyi Thar Yar Street, Yangon <br>
+            Email : ygnbuscafeinfo.com.mm <br>
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30545.588485761036!2d96.17762263955075!3d16.8660694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec95909b37df%3A0x8d6763b109e14651!2sYGN%20Bus%20Cafe!5e0!3m2!1sen!2smm!4v1625495767588!5m2!1sen!2smm" 
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br>
-
-    Copyright &copy; YGN Bus Cafe, All Rights Reserved.
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30545.588485761036!2d96.17762263955075!3d16.8660694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec95909b37df%3A0x8d6763b109e14651!2sYGN%20Bus%20Cafe!5e0!3m2!1sen!2smm!4v1625495767588!5m2!1sen!2smm" 
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br>
+        </form>           
+    </div>
 </body>
 </html>
