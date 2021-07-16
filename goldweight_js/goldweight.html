@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Oak Oak Gold Weight</title>
+
+	<script type="text/javascript">
+		
+		function calculate(){
+			var gram = parseInt(document.querySelector("#gweight").value);
+			var kt_price = parseInt(document.querySelector("#kt_price").value);
+			
+			var kyat_decimal = gram/16.6;
+			var kyat = parseInt(gram/16.6);
+			document.querySelector("#kyat").value = kyat;
+
+			var pae_decimal = kyat_decimal-kyat;
+			console.log(pae_decimal);
+			var pae = parseInt(pae_decimal*16);
+			document.querySelector("#pae").value = pae;
+
+			var yway_decimal = (pae_decimal*16)-pae;
+			var yway = parseInt(yway_decimal*8);
+			document.querySelector("#yway").value = yway;
+
+			var kpt = kyat + ' Kyat_thar - ' + pae + ' Pae - ' + yway + ' Yway ';
+			document.querySelector("#kpt").value = kpt;
+
+			var total = kt_price*(kyat+(pae/16)+(yway/128));
+			console.log(total);
+			document.querySelector("#total_price").value = total.toFixed(0);
+		}
+		
+	</script>
+
+</head>
+<body style="background-color: lightgoldenrodyellow; margin: 80px;">
+
+	<form style="border: 2px solid gold; width: fit-content; padding: 20px; margin: auto;">
+
+		<h1 style="padding: 30px 10px; margin: 0;">Gold Gram to Kyat Pae Yway and Total Price</h1>
+		<table style="margin: auto; letter-spacing: 3px;">
+			<tr>
+				<td>Gold Gram (g) :</td>
+				<td><input type="number" placeholder="enter the gold gram" id="gweight"></td>
+			</tr>
+
+			<tr>
+				<td>1 Kyat_Thar Price :</td>
+				<td><input type="number" placeholder="enter the gold price" id="kt_price"></td>
+			</tr>
+
+			<tr>
+				<td style="padding:10px 0;" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="padding: 10px; border-radius: 10px;" type="button" value="Calculate" onclick="calculate()"></td>
+			</tr>
+
+			<tr>
+				<td>Kyat:</td>
+				<td><input type="number" id="kyat" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Pae:</td>
+				<td><input type="number" id="pae" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Yway:</td>
+				<td><input type="number" id="yway" readonly="readonly"></td>
+			</tr>
+
+			<tr>
+				<td>Kyat-Pae-Yway :</td>
+				<!-- <td><input type="text" id="kpt" readonly="readonly"></td> -->
+				<td><textarea id="kpt" readonly="readonly" rows="2" cols="30"></textarea></td>
+			</tr>
+
+			<tr>
+				<td>Total Price :</td>
+				<td><input type="number" id="total_price" readonly="readonly"></td>
+			</tr>
+		</table>
+
+	</form>
+	
+	
+
+	
+	
+
+
+</body>
+</html>
