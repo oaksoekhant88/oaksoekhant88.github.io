@@ -7,7 +7,7 @@
 	<script type="text/javascript">
 		
 		function calculate(){
-			var gram = parseInt(document.querySelector("#gweight").value);
+			var gram = document.querySelector("#gweight").value;
 			var kt_price = parseInt(document.querySelector("#kt_price").value);
 			
 			var kyat_decimal = gram/16.6;
@@ -39,7 +39,7 @@
 	<form style="border: 2px solid gold; width: fit-content; padding: 20px; margin: auto;">
 
 		<h1 style="padding: 30px 10px; margin: 0;">Gold Gram to Kyat Pae Yway and Total Price</h1>
-		<table style="margin: auto; letter-spacing: 3px;">
+		<table style="margin: auto;">
 			<tr>
 				<td>Gold Gram (g) :</td>
 				<td><input type="number" placeholder="enter the gold gram" id="gweight"></td>
