@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Loan</title>
+</head>
+<body>
+
+    <h1>Home Loan</h1>
+    <label for="homeValue">Home Value</label> <br>
+    <input type="number" value="20000000"id="homeValue"><br>
+    <label for="downPayment">Down Payment 50% 30% 10%</label> <br>
+    <input type="number" min="10" value="50" id="downPayment"><br>
+    <label for="credit">Credit</label> <br>
+    <input type="number" value="10000000" id="credit"><br>
+    <label for="interestRate">Interest Rate</label> <br>
+    <input type="number" value="13" id="interestRate"><br>
+    <label for="paymentYear">Payment Year</label> <br>
+    <input type="number" value="5" id="paymentYear"><br>
+    <label for="monthlyPayment">Monthly Payment</label> <br>
+    <input type="number" placeholder="Monthly Payment" readonly="readonly" id="monthlyPayment"><br>
+    <button id="btncalculate">Calculate</button>
+    
+    <div>
+        <h1>Loan Payment Plan Table</h1>
+        <div id="loanPaymentTable">
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Principle at Brginning</th>
+                        <th>EMI</th>
+                        <th>Interest</th>
+                        <th>Principle</th>
+                    </tr>
+                </thead>
+                <tbody id="mytbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        // button click function() //
+        let btncalculate = document.getElementById('btncalculate');
+        btncalculate.addEventListener('click',function(){
+            let homeValue = parseInt(document.getElementById('homeValue').value);
+            let downPayment = parseInt(document.getElementById('downPayment').value);
+            let credit = parseInt(document.getElementById('credit').value);
+            let interestRate = parseInt(document.getElementById('interestRate').value);
+            let paymentYear = parseInt(document.getElementById('paymentYear').value);
+            // console.log(homeValue,downPayment,credit,interestRate,paymentYear);
+            let monthlyPay = monthlyPayment(interestRate,credit,paymentYear);
+            // console.log(monthlyPay);
+            document.getElementById('monthlyPayment').value = monthlyPay;
+            showTable(credit,paymentYear,monthlyPay,interestRate);
+        });
+
+
+        // calculate credit with homeValue and downPayment //
+        let homeValue = document.getElementById('homeValue');
+        let downPayment = document.getElementById('downPayment');
+          homeValue.addEventListener('change',function(){
+            document.getElementById('credit').value=calculateCredit(homeValue.value,downPayment.value);
+          })
+          downPayment.addEventListener('change',function(){
+            document.getElementById('credit').value=calculateCredit(homeValue.value,downPayment.value);
+          })
+
+        function calculateCredit(home,down){
+            let credit=home-(home*(down/100));
+            return credit;
+        }
+
+        
+        // calculate monthlypayment with interestRate, credit and paymentYear //
+        function monthlyPayment(interestRate,credit,paymentYear){
+            let monthlyRate=(interestRate/100)/12;
+            let paymentNumber=paymentYear*12;
+            let monthlyPayment=credit*((monthlyRate*((1+monthlyRate)**paymentNumber))/(((1+monthlyRate)**paymentNumber)-1));
+            return monthlyPayment.toFixed(2);
+        }
+
+
+        // show table
+        function showTable(credit,paymentYear,monthlyPayment,interestRate){
+            let totalMonth=paymentYear*12;
+            /*
+                credit / paymentYear / monthlyPayment / interestRate
+
+                principalatBeginning = credit;
+
+            */
+            let principalatBeginning = credit;
+            let html='';
+            // let j=1;
+            for (let i = 1; i <=totalMonth; i++) {
+                let interest=(principalatBeginning*(interestRate*0.01/12)).toFixed(2);
+                let principal=monthlyPayment-interest;
+                
+                html+=`<tr>
+                        <td>Month ${i}</td>
+                        <td>${principalatBeginning.toFixed(2)}</td>
+                        <td>${monthlyPayment}</td>
+                        <td>${interest}</td>
+                        <td>${principal.toFixed(2)}</td>
+                        </tr>`;
+                principalatBeginning-=principal;
+            }
+            document.getElementById("mytbody").innerHTML=html;
+        }
+
+    </script>
+</body>
+</html>
