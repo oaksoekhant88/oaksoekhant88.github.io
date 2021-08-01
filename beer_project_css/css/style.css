@@ -53,10 +53,8 @@
 
 .background{
 	background-image: url(../images/bg_img2.jpg);
-	background-position: 50% 90px;
-	background-repeat: no-repeat;
+	background-position: 50% 0px;
 	height: 680px;
-	/*width: 100%;*/
 }
 
 .beerbar{
@@ -187,7 +185,6 @@ div.body_white_bg .body_white_right{
 	background-image: url(../images/about_bg.jpg);
 	background-position: 50% 0px;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	height: 550px;
 }
 
@@ -328,7 +325,6 @@ div.about_thirdbody .about_thirdbody_percent .outpercent .inpercent_two{
 	background-image: url(../images/contact_bg1.jpg);
 	background-position: 50% 0px;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	height: 550px;
 }
 
