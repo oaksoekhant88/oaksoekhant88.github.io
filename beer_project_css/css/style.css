@@ -466,7 +466,7 @@ div.shop_bg .shop_bg_text{
 }
 
 .shop_body{
-	height: 1630px;
+	height: 1710px;
 	background-image: url(../images/bg_color.jpg);
 }
 
@@ -484,7 +484,7 @@ div.shop_body .shop_body_grid .shop_body_text{
 div.shop_body .shop_body_grid .grid_body_items{
 	display: grid;
 	grid-template-columns: auto auto auto;
-	width: 55%;
+	width: 60%;
 	margin: auto;
 }
 
@@ -493,6 +493,10 @@ div.shop_body .shop_body_grid .grid_body_items{
 	box-shadow: 1px 1px 6px black;
 	padding: 10px;
 	margin: 0px 20px 20px 0;
+}
+
+.grid_body_items div:hover{
+	background-color: palegoldenrod;
 }
 
 .grid_body_items div h3{
