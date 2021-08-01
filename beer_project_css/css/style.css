@@ -1,0 +1,582 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	src: url(../font/Great_vibe_font/GreatVibes-Regular.ttf);
+	font-family: Great_vibe;
+}
+@font-face{
+	src: url(../font/Prata_font/Prata-Regular.ttf);
+	font-family: Prata;
+}
+.logo{
+	width: 120px;
+	height: 70px;
+	margin-left: 30px;
+	display: block;
+}
+
+.nav_bg{
+	background-color: #252525;
+}
+.nav_bg ul{
+	float: right;
+}
+.nav_bg ul li a{
+	font-family: fantasy;
+}
+.nav_bg ul li{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	margin-right: 50px;
+	margin-top: 35px;
+}
+.nav_bg ul li:hover{
+	color: yellow;
+	transform: translate(4px,-5px);
+	transition-duration: .3s;
+}
+
+.brand_name{
+	margin-left: 58px;
+	color: white;
+	text-decoration: none;
+	font-family: Great_vibe;
+}
+
+.nav_brand{
+	display: inline-block;
+}
+
+.background{
+	background-image: url(../images/bg_img2.jpg);
+	background-position: 50% 90px;
+	background-repeat: no-repeat;
+	height: 680px;
+	/*width: 100%;*/
+}
+
+.beerbar{
+	position: absolute;
+	color: gold;
+	left: 250px;
+	top: 300px;
+	font-size: 40px;
+	font-family: Great_vibe;
+}
+
+.button{
+	background-color: black;
+	color: white;
+	padding: 13px;
+	width: 120px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+/*index - body*/
+.grid_body{
+	display: grid;
+	grid-template-columns: 650px auto auto;
+	background-color: #212126;
+}
+
+.grid_body div{
+	border: 4px solid #212126;
+	color: white;
+	background-color: black;
+}
+
+div.grid_body .grid_one{
+	grid-row-start: 1;
+	grid-row-end: 3;
+	padding: 70px 50px 0 90px;
+}
+div.grid_body .grid_one h3, div.boxshow_img .boxshow_text h2, div.body_black_bg h2, div.body_white_bg h2{
+	color: gold;
+	font-family: Prata;
+}
+
+div.grid_body .grid_one button, div.body_black_bg button, div.body_white_bg button{
+	padding: 10px;
+	width: 120px;
+	color: black;
+	background-color: gold;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+div.grid_body .grid_other{
+	padding: 30px;
+	text-align: center;
+
+}
+div.grid_body .grid_other h3{
+	color: gold;
+	font-family: Prata;
+}
+
+.boxshow_img{
+	background-image: url(../images/bg_color.jpg);
+	height: 510px;
+}
+
+.boxshow_img img{
+	width: 500px;
+	height: 350px;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 80px;
+	margin-left: 90px;
+	float: left;
+}
+
+.boxshow_text{
+	position: relative;
+	top: 120px;
+	left: 80px;
+	width: 80%;
+}
+
+div.body_black_bg{
+	background-color: black;
+	color: white;
+}
+
+div.body_black_bg .body_float_text{
+	width: 35%;
+	position: relative;
+	float: left;
+	top: 90px;
+	left: 90px;
+}
+
+.beer_bottles{
+	margin: 60px 0px 50px 150px;
+}
+
+.body_white_bg{
+	height: 470px;
+	background-image: url(../images/bg_color.jpg);
+}
+
+div.body_white_bg .body_white_left{
+	float: left;
+	width: 35%;
+	padding-top: 77px;
+	margin: 0px 90px 10px 180px;
+}
+div.body_white_bg .body_white_right{
+	padding-top: 77px;
+	margin: 0px 80px 60px 0;
+}
+
+
+
+/*about - page*/
+.about_bg{
+	background-image: url(../images/about_bg.jpg);
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 550px;
+}
+
+.about_bg_text h1{
+	font-size: 40px;
+}
+
+.about_bg_text{
+	position: absolute;
+	color: gold;
+	left: 100px;
+	top: 230px;
+	font-family: Prata;
+}
+
+div.about_body{
+	background-color: black;
+	color: white;
+	height: 600px;
+}
+
+div.about_body_text h1, div.about_secbody_left h1, div.about_secbody_right h1, div.about_lastbody h2{
+	font-family: Prata;
+	color: gold;
+}
+
+div.about_body .about_body_text{
+	position: relative;
+	top: 80px;
+	left: 100px;
+	float: left;
+	width: 45%;
+}
+
+div.about_body .about_body_img{
+	margin-top: 80px;
+	margin-right: 120px;
+	float: right;
+	height: 412px;
+}
+
+div.about_secbody{
+	background-image: url(../images/bg_trans.jpg);
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 350px;
+	color: ghostwhite;
+}
+
+div.about_secbody .about_secbody_left{
+	float: left;
+	width: 38%;
+	padding-top: 50px;
+	margin: 0 120px 0px 90px;
+}
+
+div.about_secbody .about_secbody_right{
+	padding-top: 50px;
+	margin: 0px 80px 90px 0;
+}
+
+div.about_thirdbody{
+	background-image: url(../images/bg_color.jpg);
+	padding: 50px 0 50px 0;
+}
+
+div.about_thirdbody .about_thirdbody_heading{
+	color: gold;
+	text-align: center;
+	font-family: Prata;
+	padding-bottom: 20px;
+}
+
+div.about_thirdbody .about_thirdbody_heading hr{
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: auto;
+	width: 40%;
+}
+
+.about_thirdbody_img{
+	padding-left: 50px;
+}
+
+div.about_thirdbody_percent{
+	float: right;
+	position: relative;
+	top: 15px;
+	right: 80px;
+	width: 600px;
+	color: #e6c535;
+	font-family: Prata;
+}
+
+div.about_thirdbody .about_thirdbody_percent .outpercent{
+	border: 3px solid #252525;
+	border-radius: 0;
+	width: 100%;
+	height: 25px;
+	background-color: #252525;
+}
+
+div.about_thirdbody .about_thirdbody_percent .outpercent .inpercent_one{
+	background-color: #e6c535;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+div.about_thirdbody .about_thirdbody_percent .outpercent .inpercent_two{
+	background-color: #e6c535;
+	width: 80%;
+	height: 100%;
+	color: white;
+}div.about_thirdbody .about_thirdbody_percent .outpercent .inpercent_three{
+	background-color: #e6c535;
+	width: 65%;
+	height: 100%;
+	color: white;
+}
+
+.inpercent_one span{
+	position: absolute;
+	right: 5px;
+}
+.inpercent_two span{
+	position: absolute;
+	right: 120px;
+}
+.inpercent_three span{
+	position: absolute;
+	right: 210px;
+}
+
+
+/*contact - page*/
+#contact_bg{
+	background-image: url(../images/contact_bg1.jpg);
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 550px;
+}
+
+#contact_bg_text{
+	text-align: center;
+	color: gold;
+	font-family: Prata;
+	font-size: 30px;
+	position: relative;
+	top: 200px;
+}
+
+.contact_body{
+	height: 500px;
+	background-image: url(../images/bg_color.jpg);
+}
+
+div.contact_body .contact_body_text h1{
+	font-family: Prata;
+	color: gold;
+}
+
+div.contact_body .contact_body_text{
+	position: relative;
+	float: left;
+	width: 30%;
+	top: 80px;
+	left: 100px;
+}
+
+div.contact_body .contact_body_form{
+	float: right;
+	margin-top: 80px;
+	margin-right: 100px;
+}
+
+div.contact_body .contact_body_form .contact_inputs input[type=text]{
+	width: 300px;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 3px solid gold;
+	outline: none;
+}
+
+div.contact_body .contact_body_form .contact_inputs input[type=text]:focus,
+div.contact_body .contact_body_form .contact_textarea textarea:focus,
+div.contact_body_last .contact_body_lastinput input[type=text]:focus{
+	border: 3px solid palegoldenrod;
+}
+
+div.contact_body .contact_body_form .contact_textarea textarea{
+	width: 93%;
+	height: 160px;
+	resize: none;
+	border: none;
+	border-bottom: 3px solid gold;
+	outline: none;
+	padding: 12px 20px;
+}
+
+div.contact_body .contact_body_form button{
+	color:#fff;
+	background-color:darkgoldenrod;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:15px 30px;
+	margin-top: 20px;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+div.contact_body .contact_body_form button:hover,
+div.contact_body_last .contact_body_lastinput input[type=button]:hover{
+	background-color: seagreen;
+}
+
+.contact_body_last{
+	height: 180px;
+	padding: 70px 300px 0px 300px;
+	margin: auto;
+	background-image: url(../images/bg_color.jpg);
+}
+
+div.contact_body_last .contact_body_lastheading{
+	text-align: center;
+	color: gold;
+	font-family: Prata;
+}
+
+div.contact_body_last .contact_body_lastinput{
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.contact_body_last .contact_body_lastinput input[type=text]{
+	width: 400px;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	margin-right: -8px;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	transition: 1s;
+	outline: none;
+	display: inline-block;
+}
+
+div.contact_body_last .contact_body_lastinput input[type=button]{
+	background-color:darkgoldenrod;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:15px 30px;
+	margin-bottom: 10px;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+
+/*shop - page*/
+.shop_bg{
+	background-image: url(../images/shop_bg.jpg);
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	height: 550px;
+}
+
+div.shop_bg .shop_bg_text{
+	position: relative;
+	top: 160px;
+	text-align: center;
+	font-family: Prata;
+	font-size: 30px;
+	color: gold;
+}
+
+.shop_body{
+	height: 1630px;
+	background-image: url(../images/bg_color.jpg);
+}
+
+div.shop_body .shop_body_grid{
+	padding-top: 80px;
+}
+
+div.shop_body .shop_body_grid .shop_body_text{
+	padding-bottom: 20px;
+	text-align: center;
+	color: gold;
+	font-family: Prata;
+}
+
+div.shop_body .shop_body_grid .grid_body_items{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 55%;
+	margin: auto;
+}
+
+.grid_body_items div{
+	border: 2px solid palegoldenrod;
+	box-shadow: 1px 1px 6px black;
+	padding: 10px;
+	margin: 0px 20px 20px 0;
+}
+
+.grid_body_items div h3{
+	font-family: Prata;
+}
+
+.grid_body_items div hr{
+	margin: 0px -10px 10px -10px;
+	border: 2px solid gray;
+}
+
+.grid_body_items div img{
+	width: 200px;
+	height: 200px;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.grid_body_items div img:hover{
+	width: 230px;
+	height: 230px;
+	transform: rotate(360deg);
+}
+
+.shop_lastbody{
+	background-image: url(../images/shop_bg1.jpg);
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	height: 710px;
+}
+
+div.shop_lastbody .shop_lastbody_text{
+	position: relative;
+	float: left;
+	top: 100px;
+	left: 150px;
+}
+div.shop_lastbody .shop_lastbody_img{
+	float: right;
+	padding: 55px 140px 0px 0px;
+}
+
+
+
+
+
+
+/*footer*/
+div.about_lastbody .about_lastbody_text .about_lastbody_logo .nav_brand{
+	padding: 20px 30px 20px 150px ;
+}
+
+.about_lastbody_text{
+	display: grid;
+	grid-template-columns: 580px auto auto;
+	background-color: #1b1b1b;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer{
+	background-color: #252525;
+	height: 50px;
+}
+
+footer.footer .footer_text{
+	color: white;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 90px;
+}
+
+footer.footer .footer_text b{
+	color: gold;
+	font-family: Prata;
+}
+
+footer.footer a{
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	color: gold;
+}
