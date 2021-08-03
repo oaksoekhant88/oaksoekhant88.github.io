@@ -466,7 +466,7 @@ div.shop_bg .shop_bg_text{
 }
 
 .shop_body{
-	height: 1710px;
+	height: 1380px;
 	background-image: url(../images/bg_color.jpg);
 }
 
@@ -483,8 +483,8 @@ div.shop_body .shop_body_grid .shop_body_text{
 
 div.shop_body .shop_body_grid .grid_body_items{
 	display: grid;
-	grid-template-columns: auto auto auto;
-	width: 60%;
+	grid-template-columns: auto auto auto auto;
+	width: 80%;
 	margin: auto;
 }
 
@@ -503,6 +503,10 @@ div.shop_body .shop_body_grid .grid_body_items{
 	font-family: Prata;
 }
 
+.grid_body_items div del{
+	color: #c5c5c4;
+}
+
 .grid_body_items div hr{
 	margin: 0px -10px 10px -10px;
 	border: 2px solid gray;
@@ -515,8 +519,6 @@ div.shop_body .shop_body_grid .grid_body_items{
 }
 
 .grid_body_items div img:hover{
-	width: 230px;
-	height: 230px;
 	transform: rotate(360deg);
 }
 
