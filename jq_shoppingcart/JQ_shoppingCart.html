@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery Shopping Cart</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="customstyle.css">
+	<script type="text/javascript" src="sweetalert2.all.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="customjs.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	  	<div class="container-fluid">
+	    	<a class="navbar-brand" href="#"><img src="img/favicon-32x32.png" title="Home"></a>
+	    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      		<span class="navbar-toggler-icon"></span>
+	    	</button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      	<ul class="navbar-nav mx-auto text-center">
+			        <li class="nav-item mx-2">
+			          	<a class="nav-link px-3 active" href="#home">Home</a>
+			        </li>
+			        <li class="nav-item mx-2">
+			          	<a class="nav-link px-3" href="#about">About</a>
+			        </li>
+			        <li class="nav-item mx-2">
+			          	<a class="nav-link px-3" href="#contact">Contact</a>
+			        </li>
+			        <li class="nav-item mx-2">
+			          	<a class="nav-link px-3" href="#shop">Shop</a>
+			        </li>
+			        <li class="nav-item mx-2">
+			        	<div class="cart-nav">
+			        		<div class="icon">
+			        			<a class="nav-link px-3" href="#cart"><i class="fas fa-shopping-cart"></i>
+			        				<span class="">Cart<span class="item-count" data-count="0">0</span></span>
+			        			</a>
+			        		</div>
+			        	</div>
+			        </li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+	<div class="container container_content">
+		<div class="tab">
+			<div class="content text-center" id="home">
+				<h3 class="mb-0">Home</h3>
+				<img src="img/underline.png" class="mb-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="content text-center" id="about">
+				<h3 class="mb-0">About</h3>
+				<img src="img/underline.png" class="mb-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="content" id="contact">
+				<h3 class="mb-0 text-center">Contact</h3>
+				<div class="text-center">
+					<img src="img/underline.png" class="mb-3">
+				</div>
+				<div class="container my-5">
+					<div class="row">
+						<div class="col-md-6">
+							<h4 class="content-area" style="font-weight: 700;">SEND AN ADVICE</h4>
+							<div class="mb-3">
+							  	<label for="name" class="form-label">Your Name</label>
+							  	<input type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="mb-3">
+							  	<label for="email" class="form-label">Your Email</label>
+							  	<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="mb-3">
+							  	<label for="phone" class="form-label">Your Phone</label>
+							  	<input type="text" class="form-control" id="phone" placeholder="Phone">
+							</div>
+							<div class="mb-3">
+							  	<label for="sub" class="form-label">Your Subject</label>
+							  	<input type="text" class="form-control" id="sub" placeholder="Subject">
+							</div>
+							<div class="mb-3">
+							  	<label for="message" class="form-label">Your Message</label>
+							  	<textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+							</div>
+							<button type="button" class="btn btn-success" style="float: right;">SEND</button>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-control">
+								<h4 class="content-area" style="font-weight: 700;">WHERE TO FIND US</h4>
+								<div>
+									<h5>Yangon Office Address</h5>
+									<ul class="list-unstyled" style="font-size: 15px; color: #7e7e7e;">
+										<li class="mb-2"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #7FC241;"></i> No (35J) ,Thiri Avenue Street, 7 Mile, Mayangone Township, Yangon.</li>
+										<li class="mb-2"><i class="fas fa-phone" style="margin-right: 10px; color: #7FC241;"></i> 01-655940, 01-652019</li>
+									</ul>
+								</div>
+								<div>
+									<h5>Yangon Warehouse 1</h5>
+									<ul class="list-unstyled" style="font-size: 15px; color: #7e7e7e;">
+										<li class="mb-2"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #7FC241;"></i> No.293, Zaygabar 7th Street, Mingalardon Industrial Zone, Yangon.</li>
+										<li class="mb-2"><i class="fas fa-phone" style="margin-right: 10px; color: #7FC241;"></i> 01-655940, 01-652019</li>
+									</ul>
+								</div>
+								<div>
+									<h5>Yangon Warehouse 2</h5>
+									<ul class="list-unstyled" style="font-size: 15px; color: #7e7e7e;">
+										<li class="mb-2"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #7FC241;"></i> No( 97/1), 113 Ward, Coner of Kanaung Min Thar Gyi Street and U Boe Hlaing Street, East Dagon Industrial Zone , East Dagon Township, Yangon.</li>
+										<li class="mb-2"><i class="fas fa-phone" style="margin-right: 10px; color: #7FC241;"></i> 01-655940, 01-652019</li>
+									</ul>
+								</div>
+								<div>
+									<h5>Mandalay Office Address</h5>
+									<ul class="list-unstyled" style="font-size: 15px; color: #7e7e7e;">
+										<li class="mb-2"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #7FC241;"></i> No(33), Heavy Industrial Zone,Kyaukse Township. Mandalay.</li>
+										<li class="mb-2"><i class="fas fa-phone" style="margin-right: 10px; color: #7FC241;"></i> 09-787878809, 09-765409296, 09-797195577</li>
+									</ul>
+								</div>
+								<div>
+									<h5>Mandalay Warehouse</h5>
+									<ul class="list-unstyled" style="font-size: 15px; color: #7e7e7e;">
+										<li class="mb-2"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #7FC241;"></i> 62 street, Industrial Park, Pyigyidakhon Township, Mandalay.</li>
+										<li class="mb-2"><i class="fas fa-phone" style="margin-right: 10px; color: #7FC241;"></i> 09-787878809, 09-765409296, 09-797195577</li>
+									</ul>
+								</div>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content text-center" id="shop">
+				<h3 class="mb-0">Shop</h3>
+				<img src="img/underline.png" class="mb-3">
+				<div class="shop mb-5">
+					<div class="item">
+						<img src="img/beer2.png" width="100px">
+						<p class="mb-0">Holo</p>
+						<strong>1500 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="1" data-name="Holo" data-image="img/beer2.png" data-price="1500">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer3.png" width="100px">
+						<p class="mb-0">Yolo</p>
+						<strong>1200 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="2" data-name="Yolo" data-image="img/beer3.png" data-price="1200">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer4.png" width="100px">
+						<p class="mb-0">Loco</p>
+						<strong>2000 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="3" data-name="Loco" data-image="img/beer4.png" data-price="2000">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer5.png" width="100px">
+						<p class="mb-0 mt-3">Regan 7</p>
+						<strong>1800 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="4" data-name="Regan 7" data-image="img/beer5.png" data-price="1800">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer6.png" width="100px">
+						<p class="mb-0 mt-3">Tubo</p>
+						<strong>1600 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="5" data-name="Tubo" data-image="img/beer6.png" data-price="1600">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer7.png" width="100px">
+						<p class="mb-0 mt-3">Henikal</p>
+						<strong>2100 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="6" data-name="Henikal" data-image="img/beer7.png" data-price="2100">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer8.png" width="100px">
+						<p class="mb-0">Grand Royal</p>
+						<strong>1300 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="7" data-name="Grand Royal" data-image="img/beer8.png" data-price="1300">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer9.png" width="100px">
+						<p class="mb-0">Liverpool</p>
+						<strong>1450 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="8" data-name="Liverpool" data-image="img/beer9.png" data-price="1450">Add To Cart</button>
+					</div>
+					<div class="item">
+						<img src="img/beer10.png" width="100px">
+						<p class="mb-0">Chatsbat</p>
+						<strong>1700 Ks</strong> <br>
+						<button class="btn btn-outline-success atc mt-3" data-id="9" data-name="Chatsbat" data-image="img/beer10.png" data-price="1700">Add To Cart</button>
+					</div>
+				</div>
+			</div>
+			<div class="content text-center table-responsive my-5" id="cart">
+				<h3 class="mb-0">Cart</h3>
+				<img src="img/underline.png" class="mb-3">
+				<table class="table table-success table-striped">
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Image</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Subtotal</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-success checkout" id="checkout">Checkout</button>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

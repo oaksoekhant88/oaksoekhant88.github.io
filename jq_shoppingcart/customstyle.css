@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+body{
+	background-color: #f5f5f5;
+	font-family: 'Comfortaa', cursive;
+}
+.navbar-light{
+	background-color: #0057a9;
+}
+.nav-link{
+	color: #fff !important;
+}
+ul li a:hover{
+	background-color: transparent;
+	border: 1px solid gray;
+}
+ul li a.active{
+	color: #0037ff;
+	background-color: #7FC241;
+	border-radius: 3px;
+}
+.container_content{
+	margin-top: 90px;
+}
+.content{
+	display: none;
+}
+.item_total:after{
+	content: attr(data-count);
+	color: white;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 5px 10px;
+	opacity: 0;
+}
+.item_total.zero:after{
+	opacity: 1;
+}
+.shop{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+.item{
+	border: 1px solid black;
+	padding: 15px;
+	text-align: center;
+}
+.icon .item-count{
+	border-radius: 50%;
+    background: blue;
+    padding: 7px 12px;
+    margin-left: 5px;
+}
+tbody tr{
+	vertical-align: middle;
+}
+#checkout{
+	float: right;
+}
+.remove{
+	color: red;
+}
