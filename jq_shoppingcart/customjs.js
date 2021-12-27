@@ -40,14 +40,14 @@ $j(function($){
 		}
 
 		//Cart Notification
-		let cartnoti = $('.item-count').data('count');
-		if (cartnoti != null) {
-		    setTimeout(function(){
-		      	count++;
-		      	$(".cart-nav .item-count").text(count);
-		      	$(".cart-nav .item-count").data('count', count);
-		    }, 1000);
-		}
+		// let cartnoti = $('.item-count').data('count');
+		// if (cartnoti != null) {
+		//     setTimeout(function(){
+		//       	count++;
+		//       	$(".cart-nav .item-count").text(count);
+		//       	$(".cart-nav .item-count").data('count', count);
+		//     }, 1000);
+		// }
 		  	
 
 		// Qty increasement
@@ -62,6 +62,13 @@ $j(function($){
 			myArr.push(item)
 		}
 
+		Swal.fire({
+		  position: 'center',
+		  icon: 'success',
+		  title: 'Your Item has been successfully moved to Cart!',
+		  showConfirmButton: false,
+		  timer: 1000
+		})
 
 		// JS Object => JSON String to save LocalStorage
 		let myArrString = JSON.stringify(myArr);
@@ -69,14 +76,7 @@ $j(function($){
 
 		localStorage.setItem('cart',myArrString);
 		getdata();
-
-		Swal.fire({
-		  position: 'top-end',
-		  icon: 'success',
-		  title: 'Your Item has been successfully moved to Cart!',
-		  showConfirmButton: false,
-		  timer: 1000
-		})
+		cartNoti();
 	})
 
 	// Get Data from LocalStorage
@@ -118,7 +118,21 @@ $j(function($){
 		}
 	}
 
-	getdata();
+	//Noti
+	function cartNoti(){
+		let cart = localStorage.getItem('cart');
+		let myArr = JSON.parse(cart);
+		let no = 0;
+		if(myArr != null){
+			for(row of myArr){
+				no++;
+			}
+			$('.item-count').text(no);
+			no = 0;
+		}else{
+			$('.item-count').text(0);
+		}
+	}
 
 	// Remove
 	$j('tbody').on("click",".remove",function(){
@@ -133,6 +147,7 @@ $j(function($){
 		// console.log(myArrString);
 		localStorage.setItem('cart', myArrString);
 		getdata();
+		cartNoti();
 	})
 
 	// increase - decrease Qty
@@ -152,17 +167,25 @@ $j(function($){
 
 	// checkout
 	$j('.checkout').on("click",function(){
-		localStorage.removeItem('cart');
+		let cart = localStorage.getItem('cart');
+		let myArr = JSON.parse(cart);
+		if(myArr != null){
+			localStorage.removeItem('cart');
 
-		Swal.fire({
-		  position: 'top-end',
-		  icon: 'success',
-		  title: 'Complete Ordered <br> Good Job! &#128578;',
-		  showConfirmButton: false,
-		  timer: 1500
-		})
+			Swal.fire({
+			  position: 'center',
+			  icon: 'success',
+			  title: 'Complete Ordered <br> Good Job! &#128578;',
+			  showConfirmButton: false,
+			  timer: 1500
+			})
 
-		getdata();
+			getdata();
+			cartNoti();
+		}
 	})
+
+	getdata();
+	cartNoti();
 	
 })
