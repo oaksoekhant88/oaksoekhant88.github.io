@@ -74,7 +74,7 @@
 .hero_area .hero_btn a:first-child
 {
 	background: #cc3333;
-    padding: 12px 40px;
+    padding: 12px 35px;
     color: #ffffff;
     font-size: 16px;
     font-family: Poppins_Regular;
@@ -139,7 +139,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 56%;
+    width: 55%;
     background: #fff;
     height: 100%;
     content: "";
