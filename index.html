@@ -1,210 +1,750 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Hello Oak</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .nav-link{
-            padding: 20px 25px;
-            color: blue !important;
-            text-decoration: underline;
-        }
-        .nav-link:hover{
-            background-color: cadetblue;
-            color: rgb(60, 66, 66) !important;
-            font-weight: 600;
-        }
-        .tbfirst{
-            background-color: red;
-        }
-        .tbsecond{
-            background-color: green;
-        }
-        .tbthird{
-            background-color: blue;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <div id="top"> 
-                <a href="#mydiv" class="navbar-brand">To Div</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto text-center">
-                    <!-- <a class="nav-link" aria-current="page" href="shop/index.html">YGN Bus Cafe Shop</a>
-                    <a class="nav-link" href="form.html" target="_blank">Form Registration</a>
-                    <a class="nav-link" href="goldweight_js/goldweight.html" target="_blank">Gold Weight Calculation</a>
-                    <a class="nav-link" href="multiplication_table/multiplication.html" target="_blank">Multiplication Table</a>
-                    <a class="nav-link" href="home_loan/homeloanwithsir.html" target="_blank">Home Loan Calculate</a>
-                    <a class="nav-link" href="beer_project_css/index.html" target="_blank">Beer Project</a>
-                    <a class="nav-link" href="jq_shoppingcart/JQ_shoppingCart.html" target="_blank">JQ Shopping Cart</a> -->
-                    <a class="nav-link" href="bootstrapGrid/bootstrapGridExercise.html">Bootstrap Gird Exercise</a>
-                    <a class="nav-link" href="bootstrapGrid/bootstrapDesignExercise.html">Bootstrap Design Exercise</a>
-                    <a class="nav-link" href="yummi/index.html">Bootstrap Yummi Design</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- <div class="container mt-3">
-        <a href="index.html"><img src="images/english.png" width="30" height="20"></a>
-        <a href="myanmar/index.html"><img src="images/mm.png" width="30" height="20"></a>
-        
-        <h1>Hi Oak</h1>
-    
-        <h1>Ordered List</h1>
-        <ol type="I">
-            <li>Banana</li>
-            <li>Apple</li>
-            <li>Orange</li>
-        </ol>
-    
-        <h2>Unordered List</h2>
-        <ul type="square">
-            <li>PHP</li>
-            <li>Python</li>
-            <li>Ruby</li>
-        </ul>
-    
-        <dl>
-            <dt>HTML</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio similique tenetur 
-                aut repudiandae eius rem, nisi atque id perferendis sint eaque soluta facilis sapiente 
-                ad temporibus odio corrupti molestiae veniam?</dd>
-        </dl>
-    
-        <div>
-            <a href="day4/index.html" target="_blank">Day4 Index</a> |
-            <a href="day4/about.html" target="_blank">Day 4 About</a>
-        </div>
-    
-        <div class="row my-5">
-            <div class="col-md-6">
-                <a href="https://youtube.com" target="_blank"><img src="images/img1.jpg" border="5"></a>
-                <img src="images/images.jpg">
-            </div>
-            <div class="col-md-6">
-                <video src="yin.mp4" controls class="w-100"></video>
-            </div>
-        </div>
-    
-        <div id="mydiv" class="d-flex">
-            <img src="images/english.png" width="50%"> <br>
-            <img src="images/mm.png" width="50%"> <br>
-        </div>
-        
-        <a href="#top">To Top</a>
 
-        <div class="row">
-            <div class="col-md-4">
-                <h1> StudentList </h1>
-                <table border="1" cellpadding="10">
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>City</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mg</td>
-                        <td>Mandalay</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Zaw</td>
-                        <td>Yangon</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Su</td>
-                        <td>Latin</td>
-                    </tr>
-                </table> <br><br>
-            </div>
-    
-            <div class="col-md-4">
-                <h2>My Order Table</h2>
-                <table border="1" cellpadding="10" cellspacing="4">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Items</th>
-                            <th>Price</th>
-                            <th>Qty</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Egg</td>
-                            <td>1300</td>
-                            <td>2 kat</td>
-                            <td>2600</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Orange Juice</td>
-                            <td>1000</td>
-                            <td>2 bottles</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Snack</td>
-                            <td>100</td>
-                            <td>2 pcs</td>
-                            <td>200</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">Total</td>
-                            <td rowspan="2">4800</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">Grand Total</td>
-                        </tr>
-                    </tfoot>
-                </table> <br>
-            </div>
-    
-            <div class="col-md-4">
-                <h1>Color Table</h1>
-                <table border="4" cellpadding="10">
-                    <tr class="tbfirst">
-                        <td>cell(1,1)</td>
-                        <td colspan="2">cell(2,1)</td>
-                    </tr>
-                    <tr class="tbsecond">
-                        <td>cell(1,2)</td>
-                        <td rowspan="2">cell(2,2)</td>
-                        <td>cell(3,2)</td>
-                    </tr>
-                    <tr class="tbthird">
-                        <td>cell(1,3)</td>
-                        <td>cell(2,3)</td>
-                    </tr>
-                </table> <br> <br>
-            </div>
+<html lang="en">
+<head>
+  <title>Oak Soe Khant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome-free-5.6.3-web/css/all.min.css">
+  <link rel="icon" type="image/png" size="16x16" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+  <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">Oak Soe Khant</a>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#section-blog">Blog</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <section class="site-hero" style="background-image: url(images/back.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row intro-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center">
+          <h1 class="site-heading site-animate">Hello, I'm <strong>Oak Soe Khant</strong></h1>
+          <p class="lead site-subheading mb-4 site-animate">Keep Calm and Fine Errors</p>
+          <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">More On Me</a></p>
         </div>
+      </div>
+    </div>
+  </section> <!-- section -->
+
+  
+  <section class="site-section" id="section-about">
+    <div class="container">
+      <div class="row mb-5 align-items-center shadow">
+        <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+          <img src="images/profile1.jpg" alt="Image placeholder" class="img-fluid">
+        </div>
+        <div class="col-lg-5 pl-lg-4">
+          <div class="section-heading">
+            <h2>About <strong>Me</strong></h2>
+          </div>
+          <p class="lead">Hello! I am Oak Soe Khant. I have excellent design & coding skills, as well as ability convert client requirements into exciting online applications. I extremely wanna want to learn new technology.</p>
+          <div class="section-heading">
+            <h2><strong>Personal Information</strong></h2>
+          </div>
+          <table cellpadding="15" class="table table-borderless mb-3 table-hover">
+            <tbody>
+              <tr>
+                <th>Gender</th>
+                <td>:</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th>Age</th>
+                <td>:</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <th>Date of Birth</th>
+                <td>:</td>
+                <td>8<sup>th</sup> August 1999</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>:</td>
+                <td>oaksoekhant898@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Nationality</th>
+                <td>:</td>
+                <td>Myanmar</td>
+              </tr>
+              <tr>
+                <th>Marital Status</th>
+                <td>:</td>
+                <td>Single</td>
+              </tr>
+              <tr>
+                <th>Religion</th>
+                <td>:</td>
+                <td>Buddhist</td>
+              </tr>
+
+            </tbody>
+          </table>
+          
+
+          
+
+          <p>
+            <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+            <!-- <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a> -->
+          </p>
+        </div>
+      </div>
+
+      <div class="h2 text-center mb-4 title section-heading">
+        My <strong>Professional Skill</strong>
+      </div>
+      <div class="row pt-5 shadow">        
+        <div class="col-md-6">
+
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="skill">
+            <h3>Bootstrap</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="skill">
+            <h3>JQuery</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>Design</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>Vuejs</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <div class="col-md-6">
+
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>PHP</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>API</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
+                <span>36%</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                <span>40%</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="skill">
+            <h3>C++</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <span>10%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+    </div>
+  </section>
+
+<!--   <section class="site-section bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <div class="section-heading text-center">
+            <h2>Client <strong>Testimonial</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="block-47 d-flex mb-5">
+            <div class="block-47-image">
+              <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+            </div>
+            <blockquote class="block-47-quote">
+              <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+            </blockquote>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="block-47 d-flex mb-5">
+            <div class="block-47-image">
+              <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+            </div>
+            <blockquote class="block-47-quote">
+              <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+            </blockquote>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="block-47 d-flex mb-5">
+            <div class="block-47-image">
+              <img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+            </div>
+            <blockquote class="block-47-quote">
+              <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+            </blockquote>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="block-47 d-flex mb-5">
+            <div class="block-47-image">
+              <img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+            </div>
+            <blockquote class="block-47-quote">
+              <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="site-section border-top pb-0"  id="section-services">
+    <div class="container">
+
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="section-heading text-center">
+            <h2>My <strong>Services</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-phone3"></span>
+            </span>
+            <h3 class="mb-4">Mobile Optimize</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-wallet2"></span>
+            </span>
+            <h3 class="mb-4">Increase Revenue</h3>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-lightbulb"></span>
+            </span>
+            <h3 class="mb-4">Intuitive Idea</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-phone3"></span>
+            </span>
+            <h3 class="mb-4">Mobile Optimize</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-wallet2"></span>
+            </span>
+            <h3 class="mb-4">Increase Revenue</h3>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center mb-5">
+          <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+            <span class="icon">
+              <span class="icon-lightbulb"></span>
+            </span>
+            <h3 class="mb-4">Intuitive Idea</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+
+ <!--  <section class="site-section" id="section-features">
+    <div class="container">
+      <div class="row site-section">
+        <div class="col-md-8">
+          <p><img src="images/laptop_1.jpg" alt="" class="img-fluid"></p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="mb-3">Big Benefits for Small Business</h3>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+          <ul class="site-list">
+            <li class="site-check">Pointing has no control</li>
+            <li class="site-check">A small river named Duden flows</li>
+            <li class="site-check">Roasted parts of sentences fly into your mouth</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 order-md-2">
+          <p><img src="images/laptop_1.jpg" alt="" class="img-fluid"></p>
+        </div>
+        <div class="col-md-4 order-md-1">
+          <h3 class="mb-3">All in One Place</h3>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+          <ul class="site-list">
+            <li class="site-check">Pointing has no control</li>
+            <li class="site-check">A small river named Duden flows</li>
+            <li class="site-check">Roasted parts of sentences fly into your mouth</li>
+          </ul>
+        </div>
+      </div>
+
 
     </div>
+  </section> -->
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.8255070970645!2d96.19694429999998!3d16.8350104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193e5d387a1bd%3A0xbe2d11fff20ddc85!2sThe%20Lord%20Shisha%20%40%20Thingangyun!5e0!3m2!1sen!2smm!4v1625473784380!5m2!1sen!2smm" 
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br>
-    
-    <div class="text-center">
-        ALl right reserved by &copy; <a href="https://youtube.com">youtube</a> <br> <br>
-    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <section class="site-section" id="section-portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading text-center col-md-12">
+          <h2>Featured <strong>Portfolio</strong></h2>
+        </div>
+      </div>
+      <!-- <div class="filters">
+        <ul>
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".design">Design</li>
+          <li data-filter=".js">JavaScript</li>
+          <li data-filter=".ls">LocalStorage</li>
+        </ul>
+      </div> -->
+
+      <div class="filters-content">
+        <div class="row grid">
+
+          <div class="single-portfolio col-sm-4 all design">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <a href="beer_project_css/index.html" target="_blank"><img class="image img-fluid" src="images/Single-Beer.jpg"></a>
+              </div>                                 
+            </div>
+            <div class="p-inner">
+              <h4>CSS Beer Web Design</h4>
+              <div class="cat">Design</div>
+            </div>                                         
+          </div>
+
+          <div class="single-portfolio col-sm-4 all design">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <a href="yummi/index.html" target="_blank"><img class="image img-fluid shadow" src="images/yummi.png" alt=""></a>
+              </div>                                 
+            </div>
+            <div class="p-inner">
+              <h4>Bootstrap Yummi Delivery Design</h4>
+              <div class="cat">Design</div>
+            </div>                                         
+          </div>  
+
+          <div class="single-portfolio col-sm-4 all packaging">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <a href="goldweight_js/goldweight.html" target="_blank"><img class="image img-fluid" src="images/goldCalculator.png" alt=""></a>
+              </div> 
+            </div>
+            <div class="p-inner">
+              <h4>Gold Weight Calculator</h4>
+              <div class="cat">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="single-portfolio col-sm-4 all packaging">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <a href="home_loan/homeloanwithsir.html" target="_blank"><img class="image img-fluid" src="images/homeLoan.jpg" alt=""></a>
+              </div>                               
+            </div> 
+            <div class="p-inner">
+              <h4>Home Loan Calculator</h4>
+              <div class="cat">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="single-portfolio col-sm-4 all typography">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <a href="jq_shoppingcart/JQ_shoppingCart.html" target="_blank"><img class="image img-fluid" src="images/cart.jpg" alt=""></a>
+              </div>                                
+            </div>
+            <div class="p-inner">
+              <h4>Shopping Cart</h4>
+              <div class="cat">LocalStorage</div>
+            </div>
+          </div>
+          
+          <!-- <div class="single-portfolio col-sm-4 all photography">
+            <div class="relative">
+              <div class="thumb">
+                <div class="overlay overlay-bg"></div>
+                <img class="image img-fluid" src="images/p6.jpg" alt="">
+              </div>
+              <a href="images/p6.jpg" class="img-pop-up">  
+                <div class="middle">
+                  <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                </div>
+              </a>                                
+            </div>
+            <div class="p-inner">
+              <h4>White Space Photography</h4>
+              <div class="cat">photography</div>
+            </div>
+          </div> -->
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .section -->
+
+  <section class="site-section bg-light " id="section-resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center">
+            <h2>My <strong>Resume</strong></h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-5">Education</h2>
+          <div class="resume-item mb-4 shadow">
+            <span class="date"><span class="icon-calendar"></span> January 2020 - June 2021</span>
+            <h3>B.Sc (Hons) Degree in Business Information Technology</h3>
+            <span class="school">University of GreenWich (UK)</span>
+          </div>
+
+          <div class="resume-item mb-4 shadow">
+            <span class="date"><span class="icon-calendar"></span> June 2017 - December 2018</span>
+            <h3>L5 Diploma in Computing ( L5DC )</h3>
+            <span class="school">NCC Education</span>
+          </div>
+
+          <div class="resume-item mb-4 shadow">
+            <span class="date"><span class="icon-calendar"></span> July 2016 - March 2017</span>
+            <h3>L4 Diploma in Computing ( L4DC )</h3>
+            <span class="school">NCC Education</span>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item mb-4 shadow">
+            <span class="date"><span class="icon-calendar"></span> November 2021 - January 2022</span>
+            <h3>Intern Web Development</h3>
+            <p>I successfully intern developed about 3 months at <a href="https://lyrioninnovations.com/" target="_blank">Lyrion Innovation</a>.</p>
+            <p>I had learnt new technologies and tools at this intern.</p>
+            <span class="school"></span>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section> <!-- .section -->
+
+  <!-- <section class="site-section" id="section-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center">
+            <h2>Blog on <strong>Medium</strong></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="blog-entry">
+            <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="blog-entry-text">
+              <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+              <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+              <div class="meta">
+                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="blog-entry">
+            <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="blog-entry-text">
+              <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+              <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+              <div class="meta">
+                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="blog-entry">
+            <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="blog-entry-text">
+              <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+              <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+              <div class="meta">
+                <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <section class="site-section bg-light" id="section-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center">
+            <h2>Wanna <strong>Start Work</strong> With Me?</h2>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-7 mb-5 mb-md-0">
+          <form action="" class="site-form">
+            <h3 class="mb-5">Get In Touch</h3>
+            <div class="form-group">
+              <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control px-3 py-4" placeholder="Your Phone">
+            </div>
+            <div class="form-group mb-5">
+              <textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+            </div>
+          </form>
+        </div> -->
+
+        <div class="col-md-12 pl-md-12 border py-5 shadow">
+          <h3 class="mb-5 text-center">My Contact Details</h3>
+          <ul class="site-contact-details d-flex justify-content-center">
+            <li class="px-5">
+              <span class="text-uppercase"><i class="fas fa-envelope fa-2x"></i></i>&nbsp;Email</span>
+              oaksoekhant898@gmail.com
+            </li>
+            <li class="px-5">
+              <span class="text-uppercase"><i class="fas fa-phone fa-2x"></i>&nbsp;Phone</span>
+              +95 9783687397
+            </li>
+
+            <li class="px-5">
+              <span class="text-uppercase"><i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;Address</span>
+              Yangon, Myanmar <br>
+              Thingangyaung Township.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-12 text-center">
+          <p>
+            <a href="https://www.facebook.com/Oak9693" target="_blank" class="social-item"><span class="icon-facebook2"></span></a>
+            <!-- <a href="#" class="social-item"><span class="icon-twitter"></span></a> -->
+            <a href="https://www.instagram.com/oak_soekhant/" class="social-item" target="_blank"><span class="icon-instagram2"></span></a>
+            <a href="https://www.linkedin.com/in/oak-soe-khant-2564431b2/" class="social-item" target="_blank"><span class="icon-linkedin2"></span></a>       
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col-12 text-center">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy; <script>document.write(new Date().getFullYear());</script> made with <i class="icon-heart" aria-hidden="true"></i> by Oak Soe Khant
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+
 </body>
 </html>

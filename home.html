@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hello Oak</title>
+    <link rel="icon" type="img/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link{
+            padding: 20px 25px;
+            color: blue !important;
+            text-decoration: underline;
+        }
+        .nav-link:hover{
+            background-color: cadetblue;
+            color: rgb(60, 66, 66) !important;
+            font-weight: 600;
+        }
+        .tbfirst{
+            background-color: red;
+        }
+        .tbsecond{
+            background-color: green;
+        }
+        .tbthird{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <div id="top"> 
+                <a href="#mydiv" class="navbar-brand">To Div</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto text-center">
+                    <a class="nav-link" aria-current="page" href="shop/index.html">YGN Bus Cafe Shop</a>
+                    <a class="nav-link" href="form.html" target="_blank">Form Registration</a>
+                    <a class="nav-link" href="goldweight_js/goldweight.html" target="_blank">Gold Weight Calculation</a>
+                    <a class="nav-link" href="multiplication_table/multiplication.html" target="_blank">Multiplication Table</a>
+                    <a class="nav-link" href="home_loan/homeloanwithsir.html" target="_blank">Home Loan Calculate</a>
+                    <a class="nav-link" href="beer_project_css/index.html" target="_blank">Beer Project</a>
+                    <a class="nav-link" href="jq_shoppingcart/JQ_shoppingCart.html" target="_blank">JQ Shopping Cart</a>
+                    <a class="nav-link" href="bootstrapGrid/bootstrapGridExercise.html">Bootstrap Gird Exercise</a>
+                    <a class="nav-link" href="bootstrapGrid/bootstrapDesignExercise.html">Bootstrap Design Exercise</a>
+                    <a class="nav-link" href="yummi/index.html">Bootstrap Yummi Design</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <a href="index.html"><img src="img/english.png" width="30" height="20"></a>
+        <a href="myanmar/index.html"><img src="img/mm.png" width="30" height="20"></a>
+        
+        <h1>Hi Oak</h1>
+    
+        <h1>Ordered List</h1>
+        <ol type="I">
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+        </ol>
+    
+        <h2>Unordered List</h2>
+        <ul type="square">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Ruby</li>
+        </ul>
+    
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio similique tenetur 
+                aut repudiandae eius rem, nisi atque id perferendis sint eaque soluta facilis sapiente 
+                ad temporibus odio corrupti molestiae veniam?</dd>
+        </dl>
+    
+        <div>
+            <a href="day4/index.html" target="_blank">Day4 Index</a> |
+            <a href="day4/about.html" target="_blank">Day 4 About</a>
+        </div>
+    
+        <div class="row my-5">
+            <div class="col-md-6">
+                <a href="https://youtube.com" target="_blank"><img src="img/img1.jpg" border="5"></a>
+                <img src="img/images.jpg">
+            </div>
+            <div class="col-md-6">
+                <video src="yin.mp4" controls class="w-100"></video>
+            </div>
+        </div>
+    
+        <div id="mydiv" class="d-flex">
+            <img src="img/english.png" width="50%"> <br>
+            <img src="img/mm.png" width="50%"> <br>
+        </div>
+        
+        <a href="#top">To Top</a>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h1> StudentList </h1>
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>City</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mg</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Zaw</td>
+                        <td>Yangon</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Su</td>
+                        <td>Latin</td>
+                    </tr>
+                </table> <br><br>
+            </div>
+    
+            <div class="col-md-4">
+                <h2>My Order Table</h2>
+                <table border="1" cellpadding="10" cellspacing="4">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Items</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Egg</td>
+                            <td>1300</td>
+                            <td>2 kat</td>
+                            <td>2600</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Orange Juice</td>
+                            <td>1000</td>
+                            <td>2 bottles</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Snack</td>
+                            <td>100</td>
+                            <td>2 pcs</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td rowspan="2">4800</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Grand Total</td>
+                        </tr>
+                    </tfoot>
+                </table> <br>
+            </div>
+    
+            <div class="col-md-4">
+                <h1>Color Table</h1>
+                <table border="4" cellpadding="10">
+                    <tr class="tbfirst">
+                        <td>cell(1,1)</td>
+                        <td colspan="2">cell(2,1)</td>
+                    </tr>
+                    <tr class="tbsecond">
+                        <td>cell(1,2)</td>
+                        <td rowspan="2">cell(2,2)</td>
+                        <td>cell(3,2)</td>
+                    </tr>
+                    <tr class="tbthird">
+                        <td>cell(1,3)</td>
+                        <td>cell(2,3)</td>
+                    </tr>
+                </table> <br> <br>
+            </div>
+        </div>
+
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.8255070970645!2d96.19694429999998!3d16.8350104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193e5d387a1bd%3A0xbe2d11fff20ddc85!2sThe%20Lord%20Shisha%20%40%20Thingangyun!5e0!3m2!1sen!2smm!4v1625473784380!5m2!1sen!2smm" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br>
+    
+    <div class="text-center">
+        ALl right reserved by &copy; <a href="https://youtube.com">youtube</a> <br> <br>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

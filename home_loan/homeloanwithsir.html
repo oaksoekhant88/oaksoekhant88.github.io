@@ -5,41 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Loan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Home Loan</h1>
-    <label for="homeValue">Home Value</label> <br>
-    <input type="number" value="20000000"id="homeValue"><br>
-    <label for="downPayment">Down Payment 50% 30% 10%</label> <br>
-    <input type="number" min="10" value="50" id="downPayment"><br>
-    <label for="credit">Credit</label> <br>
-    <input type="number" value="10000000" id="credit"><br>
-    <label for="interestRate">Interest Rate</label> <br>
-    <input type="number" value="13" id="interestRate"><br>
-    <label for="paymentYear">Payment Year</label> <br>
-    <input type="number" value="5" id="paymentYear"><br>
-    <label for="monthlyPayment">Monthly Payment</label> <br>
-    <input type="number" placeholder="Monthly Payment" readonly="readonly" id="monthlyPayment"><br>
-    <button id="btncalculate">Calculate</button>
-    
-    <div>
-        <h1>Loan Payment Plan Table</h1>
-        <div id="loanPaymentTable">
-            <table border="1" cellpadding="10">
-                <thead>
-                    <tr>
-                        <th>Sr.No</th>
-                        <th>Principle at Brginning</th>
-                        <th>EMI</th>
-                        <th>Interest</th>
-                        <th>Principle</th>
-                    </tr>
-                </thead>
-                <tbody id="mytbody">
-                    
-                </tbody>
-            </table>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-5">
+                <div class="border p-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <h1>Home Loan</h1>
+                    <label for="homeValue">Home Value</label> <br>
+                    <input type="number" class="form-control w-50" value="20000000" id="homeValue"><br>
+                    <label for="downPayment">Down Payment 50% 30% 10%</label> <br>
+                    <input type="number" class="form-control w-50" min="10" value="50" id="downPayment"><br>
+                    <label for="credit">Credit</label> <br>
+                    <input type="number" class="form-control w-50" value="10000000" id="credit"><br>
+                    <label for="interestRate">Interest Rate</label> <br>
+                    <input type="number" class="form-control w-50" value="13" id="interestRate"><br>
+                    <label for="paymentYear">Payment Year</label> <br>
+                    <input type="number" class="form-control w-50" value="5" id="paymentYear"><br>
+                    <label for="monthlyPayment">Monthly Payment</label> <br>
+                    <input type="number" class="form-control w-50" placeholder="Monthly Payment" readonly="readonly" id="monthlyPayment"><br>
+                    <button class="btn btn-success mt-3" id="btncalculate">Calculate</button>
+                </div>
+            </div>
+            <div class="col-7">
+                <div id="loanPaymentTable">
+                    <table class="table table-bordered table-responsive caption-top">
+                        <caption>Loan Payment Plan Table</caption>
+                        <thead>
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>Principle at Brginning</th>
+                                <th>EMI</th>
+                                <th>Interest</th>
+                                <th>Principle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mytbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -104,7 +112,7 @@
                 
                 html+=`<tr>
                         <td>Month ${i}</td>
-                        <td>${principalatBeginning.toFixed(2)}</td>
+                        <td class="text-center">${principalatBeginning.toFixed(2)}</td>
                         <td>${monthlyPayment}</td>
                         <td>${interest}</td>
                         <td>${principal.toFixed(2)}</td>
