@@ -25,7 +25,7 @@
 			var Y = parseInt(y);
 			document.querySelector("#yway").value = Y;
 
-			var kpt = K + ' Kyat_thar - ' + P + ' Pae - ' + Y + ' Yway ';
+			var kpt = K + ' Kyat_Thar - ' + P + ' Pae - ' + Y + ' Yway ';
 			document.querySelector("#kpt").value = kpt;
 
 			var total = kt_price * (K + (P / 16) + (Y / 128));
@@ -40,7 +40,7 @@
 
 	<form style="border: 2px solid gold; width: fit-content; padding: 20px; margin: auto;">
 
-		<h1 style="padding: 30px 10px; margin: 0;">Gold Gram to Kyat Pae Yway and Total Price</h1>
+		<h1 style="padding: 30px 10px; margin: 0;">Gold Gram to Kyat_Thar Pae Yway and Total Price</h1>
 		<table style="margin: auto;">
 			<tr>
 				<td>Gold Gram (g) :</td>
@@ -60,26 +60,26 @@
 			</tr>
 
 			<tr>
-				<td>Kyat:</td>
+				<td>Kyat_Thar :</td>
 				<td><input type="number" id="kyat" readonly="readonly" class="form-control"></td>
 			</tr>
 			<tr>
-				<td>Pae:</td>
+				<td>Pae :</td>
 				<td><input type="number" id="pae" readonly="readonly" class="form-control"></td>
 			</tr>
 			<tr>
-				<td>Yway:</td>
+				<td>Yway :</td>
 				<td><input type="number" id="yway" readonly="readonly" class="form-control"></td>
 			</tr>
 
 			<tr>
-				<td>Kyat-Pae-Yway :</td>
+				<td>Kyat_Thar-Pae-Yway :</td>
 				<!-- <td><input type="text" id="kpt" readonly="readonly"></td> -->
 				<td><textarea id="kpt" readonly="readonly" class="form-control"></textarea></td>
 			</tr>
 
 			<tr>
-				<td>Total Price (MMK):</td>
+				<td>Total Price (MMK) :</td>
 				<td><input type="number" id="total_price" readonly="readonly" class="form-control"></td>
 			</tr>
 		</table>
